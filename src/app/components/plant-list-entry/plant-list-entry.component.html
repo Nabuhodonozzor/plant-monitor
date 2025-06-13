@@ -1,0 +1,5 @@
+<p-card [header]="PlantModel?.PlantName" class="plant-card">
+  <p class="m-0">Najlepsza temperatura: {{ PlantModel?.PlantIdealTemp }}</p>
+  <p class="m-0">Najlepsza wilgotność: {{ PlantModel?.PlantIdealHum }}</p>
+  <a [href]="'/plant/' + this.PlantId">Przejdz do rosliny</a>
+</p-card>

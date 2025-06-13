@@ -1,6 +1,7 @@
 # PlantMonitorFront
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Część frontendowa aplikacji do monitorowania środowiska dookoła roślin domowych
+Prezentuje na strownie webowej dane z sensorów oraz zaimplementowane ma podstawowe mechanizmy informowania o stanie roślin.
 
 ## Development server
 

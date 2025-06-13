@@ -1,0 +1,32 @@
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  box-sizing: inherit;
+  position: relative;
+}
+
+app-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+app-drawer-content {
+  padding-inline: 1rem;
+}
+
+app-header {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: start;
+  border-width: 1px;
+  border-color: red;
+  height: 50px;
+}
