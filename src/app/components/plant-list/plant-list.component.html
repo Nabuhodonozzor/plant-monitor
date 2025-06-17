@@ -1,3 +1,57 @@
+<div
+  class="flex flex-wrap gap-4"
+  style="
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: fit-content;
+    padding-block: 8px;
+    padding: 8px;
+    background-color: #333;
+    border-radius: 8px;
+  "
+>
+  <span class="text-white font-medium">Okno czasowe: </span>
+  <div class="flex items-center">
+    <input
+      type="radio"
+      id="time6h"
+      name="time"
+      value="6h"
+      [(ngModel)]="timeWindow"
+      (change)="Reload()"
+      class="hidden peer"
+    />
+    <label for="time6h" class="radio-label">6h</label>
+  </div>
+
+  <div class="flex items-center">
+    <input
+      type="radio"
+      id="time12h"
+      name="time"
+      value="12h"
+      [(ngModel)]="timeWindow"
+      (change)="Reload()"
+      class="hidden peer"
+    />
+    <label for="time12h" class="radio-label">12h</label>
+  </div>
+
+  <div class="flex items-center">
+    <input
+      type="radio"
+      id="time24h"
+      name="time"
+      value="24h"
+      [(ngModel)]="timeWindow"
+      (change)="Reload()"
+      class="hidden peer"
+    />
+    <label for="time24h" class="radio-label">24h</label>
+  </div>
+</div>
+
 <!-- * Temperatura -->
 
 <div class="dataset">
@@ -13,6 +67,15 @@
   <span class="label">Wilgotność powietrza</span>
   <div class="chart-container">
     <canvas class="chart" id="air-humidity-chart"></canvas>
+  </div>
+</div>
+
+<!-- * Ciśnienie atmosferyczne -->
+
+<div class="dataset">
+  <span class="label">Ciśnienie atmosferyczne</span>
+  <div class="chart-container">
+    <canvas class="chart" id="air-pressure-chart"></canvas>
   </div>
 </div>
 
